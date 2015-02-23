@@ -94,7 +94,7 @@ $this->setTitle($config->getValue('config.sitename') . ' - ' . $this->getTitle()
 				<div class="inner">
 					<h1>
 						<a href="<?php echo $this->baseurl; ?>" title="<?php echo $config->getValue('config.sitename'); ?>" style="height: 72px; padding: 0px">
-							<img src="https://www.nectar.org.au/sites/default/files/NeCTAR%20logo%20screenres.jpg" height="72px"/>
+							<img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logos/nectar-logo.jpg" height="72px"/>
 						</a>
 					</h1>
 
