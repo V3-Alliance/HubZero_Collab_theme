@@ -68,8 +68,9 @@ $joomlaRelease = 'joomla' . $joomlaVersion->RELEASE;
 			<div id="masthead" role="banner">
 				<div class="inner">
 					<h1>
-						<a href="<?php echo $this->baseurl; ?>" title="<?php echo $config->getValue('config.sitename'); ?>">
-							<span><?php echo $config->getValue('config.sitename'); ?></span>
+						<a href="<?php echo $this->baseurl; ?>" title="<?php echo $config->getValue('config.sitename'); ?>" style="height: 72px; padding: 0px">
+							<img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logos/nectar-logo.jpg" height="72px"/>
+							<span style="color: gray; font-size: x-large; text-transform: uppercase;">Collaboration Hub</span>
 						</a>
 					</h1>
 					<div class="mobile-search">
