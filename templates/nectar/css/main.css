@@ -1102,8 +1102,11 @@
     text-shadow: none;
     color: #aaa;
   }
-  #footer ul#legalese img {
+  #footer ul#legalese .v3 {
     height: 44px;
+  }
+  #footer ul#legalese .nectar {
+    height: 70px;
   }
   #footer ul#legalese a {
     color: #777;
