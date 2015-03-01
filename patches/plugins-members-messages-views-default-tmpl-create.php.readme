@@ -1,0 +1,1 @@
+Fix sending in-site messages . Needed to reference variable via $this.
