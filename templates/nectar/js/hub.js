@@ -1,6 +1,6 @@
 /**
  * @package     hubzero-cms
- * @file        templates/mytemplate/js/hub.js
+ * @file        templates/nectar/js/hub.js
  * @copyright   Copyright 2005-2014 Purdue University. All rights reserved.
  * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
  */
@@ -29,7 +29,7 @@ jQuery(document).ready(function(jq){
 	var $ = jq,
 		w = 760,
 		h = 520,
-		templatepath = '/templates/mytemplate/';
+		templatepath = '/templates/nectar/';
 
 	// Set focus on username field for login form
 	if ($('#username').length > 0) {

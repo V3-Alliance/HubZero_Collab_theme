@@ -35,7 +35,7 @@ defined('_JEXEC') or die('Restricted access');
 $config = JFactory::getConfig();
 
 //define tempate
-$this->template = 'mytemplate';
+$this->template = 'nectar';
 
 //get device info
 $browser = new \Hubzero\Browser\Detector();

@@ -1,6 +1,6 @@
 /**
  * @package     hubzero-cms
- * @file        templates/mytemplate/css/browser/ie7.css
+ * @file        templates/nectar/css/browser/ie7.css
  * @copyright   Copyright 2005-2013 Purdue University. All rights reserved.
  * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
  */
@@ -48,12 +48,12 @@
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a0b2', endColorstr='#250b23', GradientType=0);
 	}
 	#splash .inner-wrap {
-		background: transparent url("/templates/mytemplate/images/layout/glass-stripes.png");
+		background: transparent url("/templates/nectar/images/layout/glass-stripes.png");
 	}
 	#splash .inner-wrap .inner {
 		border-left: 1px solid #4b677c;
 		border-right: 1px solid #4b677c;
-		background: transparent url("/templates/mytemplate/images/layout/glass.png");
+		background: transparent url("/templates/nectar/images/layout/glass.png");
 	}
 
 	#wrap {
@@ -95,17 +95,17 @@
 	.avgrating span {
 		padding-left: 0;
 	}
-	.no-stars        { background: url("/templates/mytemplate/images/stars/stars.gif") 0 0 no-repeat; }
-	.half-stars      { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -40px no-repeat; }
-	.one-stars       { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -80px no-repeat; }
-	.onehalf-stars   { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -120px no-repeat; }
-	.two-stars       { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -160px no-repeat; }
-	.twohalf-stars   { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -200px no-repeat; }
-	.three-stars     { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -240px no-repeat; }
-	.threehalf-stars { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -280px no-repeat; }
-	.four-stars      { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -320px no-repeat; }
-	.fourhalf-stars  { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -360px no-repeat; }
-	.five-stars      { background: url("/templates/mytemplate/images/stars/stars.gif") 0 -400px no-repeat; }
+	.no-stars        { background: url("/templates/nectar/images/stars/stars.gif") 0 0 no-repeat; }
+	.half-stars      { background: url("/templates/nectar/images/stars/stars.gif") 0 -40px no-repeat; }
+	.one-stars       { background: url("/templates/nectar/images/stars/stars.gif") 0 -80px no-repeat; }
+	.onehalf-stars   { background: url("/templates/nectar/images/stars/stars.gif") 0 -120px no-repeat; }
+	.two-stars       { background: url("/templates/nectar/images/stars/stars.gif") 0 -160px no-repeat; }
+	.twohalf-stars   { background: url("/templates/nectar/images/stars/stars.gif") 0 -200px no-repeat; }
+	.three-stars     { background: url("/templates/nectar/images/stars/stars.gif") 0 -240px no-repeat; }
+	.threehalf-stars { background: url("/templates/nectar/images/stars/stars.gif") 0 -280px no-repeat; }
+	.four-stars      { background: url("/templates/nectar/images/stars/stars.gif") 0 -320px no-repeat; }
+	.fourhalf-stars  { background: url("/templates/nectar/images/stars/stars.gif") 0 -360px no-repeat; }
+	.five-stars      { background: url("/templates/nectar/images/stars/stars.gif") 0 -400px no-repeat; }
 
 /* Common classes */
 	.changestatus {

@@ -4,7 +4,7 @@ defined('_JEXEC') or die('Restricted access');
 $config = JFactory::getConfig();
 $juser  = JFactory::getUser();
 
-$this->template = 'mytemplate';
+$this->template = 'nectar';
 
 $lang = JFactory::getLanguage();
 $lang->load('tpl_' . $this->template);

@@ -1,6 +1,6 @@
 /**
  * @package     hubzero-cms
- * @file        templates/mytemplate/css/browser/ie8.css
+ * @file        templates/nectar/css/browser/ie8.css
  * @copyright   Copyright 2005-2013 Purdue University. All rights reserved.
  * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
  */
@@ -53,12 +53,12 @@
 		border-left: 1px solid #bbb;
 	}
 	#splash .inner-wrap {
-		background: transparent url("/templates/mytemplate/images/layout/glass-stripes.png");
+		background: transparent url("/templates/nectar/images/layout/glass-stripes.png");
 	}
 	#splash .inner-wrap .inner {
 		border-left: 1px solid #4b677c;
 		border-right: 1px solid #4b677c;
-		background: transparent url("/templates/mytemplate/images/layout/glass.png");
+		background: transparent url("/templates/nectar/images/layout/glass.png");
 	}
 
 	#wrap {

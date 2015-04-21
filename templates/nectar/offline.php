@@ -14,7 +14,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 $config = JFactory::getConfig();
 
-$this->template = 'mytemplate';
+$this->template = 'nectar';
 
 $browser = new \Hubzero\Browser\Detector();
 $cls = array(

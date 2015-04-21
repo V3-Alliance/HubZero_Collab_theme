@@ -180,7 +180,7 @@
 		padding: 20px 30px 30px 30px;
 		margin: 0;
 		font-weight: normal;
-		background: #f9f9f9 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
 		position: relative;
 	}
 	#features h3:before,
@@ -417,7 +417,7 @@
 	}
 
 	.resources-section {
-		background: #ececec url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #ececec url("/templates/nectar/images/layout/noise-lite.png");
 		position: relative;
 		z-index: 1;
 	}
@@ -441,7 +441,7 @@
 
 /* Events section */
 	.events-section {
-		background: #f9f9f9 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
 		padding: 0;
 		margin: 0;
 	}

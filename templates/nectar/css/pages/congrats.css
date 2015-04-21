@@ -1,6 +1,6 @@
 /**
  * @package     hubzero-cms
- * @file        templates/mytemplate/css/pages/congrats.css
+ * @file        templates/nectar/css/pages/congrats.css
  * @copyright   Copyright 2005-2013 Purdue University. All rights reserved.
  * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
  */
@@ -162,7 +162,7 @@
 
 /* Freatured items */
 	#features {
-		background: #ececec url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #ececec url("/templates/nectar/images/layout/noise-lite.png");
 		background: #fff;
 		padding: 0;
 	}
@@ -178,7 +178,7 @@
 		padding: 20px 30px 30px 30px;
 		margin: 0;
 		font-weight: normal;
-		background: #f9f9f9 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
 		position: relative;
 	}
 	#features h3:before,
@@ -333,7 +333,7 @@
 		padding: 0 30px;
 		margin: 0 -30px;
 		text-align: center;
-		background: #e1e1e1 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #e1e1e1 url("/templates/nectar/images/layout/noise-lite.png");
 		color: #5a5a5a;
 		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
 		-webkit-box-shadow: none;
@@ -445,7 +445,7 @@
 	
 /* Block section */
 	.blocks-section {
-		background: #ececec url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #ececec url("/templates/nectar/images/layout/noise-lite.png");
 		position: relative;
 		z-index: 1;
 	}
@@ -469,7 +469,7 @@
 
 /* Support section */
 	.support-section {
-		background: #f9f9f9 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
 		padding: 0;
 		margin: 0;
 	}

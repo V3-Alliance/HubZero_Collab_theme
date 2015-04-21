@@ -1,6 +1,6 @@
 /**
  * @package     hubzero-cms
- * @file        templates/mytemplate/css/pages/congrats.css
+ * @file        templates/nectar/css/pages/congrats.css
  * @copyright   Copyright 2005-2013 Purdue University. All rights reserved.
  * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
  */
@@ -206,7 +206,7 @@
 		padding: 0 30px;
 		margin: 0 -30px;
 		text-align: center;
-		background: #e1e1e1 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #e1e1e1 url("/templates/nectar/images/layout/noise-lite.png");
 		color: #5a5a5a;
 		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
 		-webkit-box-shadow: none;

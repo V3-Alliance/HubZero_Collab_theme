@@ -5,10 +5,10 @@
 	-- -- -- -- -- -- --
 */
 	#splash .inner-wrap {
-		background: transparent url("/templates/mytemplate/images/layout/glass-stripes.png");
+		background: transparent url("/templates/nectar/images/layout/glass-stripes.png");
 	}
 	#splash .inner-wrap .inner {
-		background: transparent url("/templates/mytemplate/images/layout/glass.png");
+		background: transparent url("/templates/nectar/images/layout/glass.png");
 	}
 	input[type=text],
 	input[type=password],

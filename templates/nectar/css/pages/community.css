@@ -1,6 +1,6 @@
 /**
  * @package     hubzero-cms
- * @file        templates/mytemplate/css/pages/community.css
+ * @file        templates/nectar/css/pages/community.css
  * @copyright   Copyright 2005-2013 Purdue University. All rights reserved.
  * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
  */
@@ -44,7 +44,7 @@
 		bottom: 0;
 		width: 30px;
 		left: -30px;
-		background: #e1e1e1 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #e1e1e1 url("/templates/nectar/images/layout/noise-lite.png");
 		-webkit-box-shadow: inset -3px 0px 4px -3px rgba(0, 0, 0, 0.25);
 		   -moz-box-shadow: inset -3px 0px 4px -3px rgba(0, 0, 0, 0.25);
 		    -ms-box-shadow: inset -3px 0px 4px -3px rgba(0, 0, 0, 0.25);
@@ -62,7 +62,7 @@
 	}
 
 	.com_content .about.odd {
-		background: #e9e9e9 url("/templates/mytemplate/images/layout/noise-lite.png");
+		background: #e9e9e9 url("/templates/nectar/images/layout/noise-lite.png");
 		padding: 30px 30px 30px 50%;
 	}
 	.com_content .about.even {
