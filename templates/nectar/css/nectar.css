@@ -1,0 +1,147 @@
+/*
+
+  -- -- -- -- -- -- --
+  Alveo specific CSS.
+  Over-riding items in main.css
+  -- -- -- -- -- -- --
+
+*/
+
+#masthead {
+  background-color: rgb(246, 183, 23);
+  /* background: #FFF url("../images/layout/noise-lite.png"); */
+}
+
+#masthead h1.brand {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 150px;
+  padding: 15px 20px 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: transparent url(../images/logos/hcsvlab.png) no-repeat left 5px top 15px;
+  display: inline-block;
+  text-indent: 0%;
+  white-space: nowrap;
+  overflow: visible;
+  padding-right: 0;
+  padding-left: 50px;
+  text-align: left;
+  color: #FFF;
+  text-shadow: none;
+  font-weight: 200;
+}
+
+#masthead a, 
+a:active, 
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+	border-bottom: 1px dotted #98cab1;
+}
+
+a:hover {
+	color: #222;
+	border-bottom: 1px solid #999;
+}
+
+#masthead h1 {
+  font-size: 20px;
+  text-transform: none;
+}
+
+#masthead h1 a:hover {
+  color: #FFF;
+}
+
+
+#masthead div.inner {
+  background-color: rgb(246, 183, 23);
+}
+
+#top {
+  background: #FFD875;
+}
+
+#splash {
+  background: #FFD875;
+}
+
+#splash .inner-wrap .inner {
+  background: #FFD875;
+}
+
+#splash .inner-wrap .inner .wrap {
+  background: transparent;
+}
+
+/* HubZero logo in welcome block. */
+small.welcome-after, 
+#welcome:after {
+  color: #FFF;
+}
+
+/* HubZero text in welcome block. */
+#welcome h2 {
+  color: #000;
+}
+
+#welcome {
+  color: #000;
+}
+
+#welcome a {
+  color: rgb(104, 77, 10);
+  border-bottom: 1px dotted rgb(104, 77, 10);
+}
+
+#welcome a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Elements */
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+a, 
+a:active, 
+a:visited {
+  text-decoration: none;
+  color: rgb(0, 171, 255);
+  border-bottom: 1px dotted color: rgb(0, 171, 255);
+}
+
+a:hover {
+  color: #0D6B9F;
+  border-bottom: 1px solid #0D6B9F;
+}
+
+  /* Events */
+.events-section .mod_events_calendar caption {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#nav {
+  margin: 5px;
+}
+
+#nav ul.menu a {
+  color: rgb(51, 51, 51);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border-right: 1px dashed #ddd;
+}
+
+#account li>a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
