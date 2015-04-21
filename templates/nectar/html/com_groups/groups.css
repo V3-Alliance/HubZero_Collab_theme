@@ -37,16 +37,12 @@
 	}
 	#page_container {
 		background-color: transparent;
-		overflow: hidden;
 	}
 	#page_options {
 		top: 5px;
 	}
 	#page_sidebar {
-		/*background: #696969 url("/templates/nectar/images/layout/noise.png");*/
-		background: #e1e1e1 url("/templates/nectar/images/layout/noise-lite.png");
-		margin-bottom: -50000px;
-		padding-bottom: 50000px;
+		background: #e1e1e1 url("/templates/mytemplate/images/layout/noise-lite.png");
 		-webkit-box-shadow: inset -3px 0px 4px -3px rgba(0, 0, 0, 0.25);
 		   -moz-box-shadow: inset -3px 0px 4px -3px rgba(0, 0, 0, 0.25);
 		    -ms-box-shadow: inset -3px 0px 4px -3px rgba(0, 0, 0, 0.25);
@@ -71,3 +67,11 @@
 	#page_menu li span {
 		color: #888;
 	}
+@media (max-width: 800px) {
+	#page_header:before {
+		left: 6em;
+	}
+	#page_header h2:after {
+		left: 95px;
+	}
+}
