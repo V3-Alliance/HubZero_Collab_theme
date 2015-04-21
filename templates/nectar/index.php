@@ -68,8 +68,9 @@ $this->setTitle($config->getValue('config.sitename') . ' - ' . $this->getTitle()
     <!--[if IE 9]><link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/browser/ie9.css" /><![endif]-->
     <!--[if IE 8]><link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/browser/ie8.css" /><![endif]-->
     <!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/browser/ie7.css" /><![endif]-->
-    <link rel="stylesheet" type="text/css" media="screen"  href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/alveo.css" />
-  </head>
+    <link rel="stylesheet" type="text/css" media="screen"  href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/main_nectar.css" />
+        <link rel="stylesheet" type="text/css" media="screen"  href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/pages/home_nectar.css" />
+      </head>
   <body>
     <jdoc:include type="modules" name="notices" />
     <jdoc:include type="modules" name="helppane" />
