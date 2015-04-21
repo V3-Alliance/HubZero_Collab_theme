@@ -19,7 +19,7 @@
 -->
 
 <install type="template" version="1.5">
-	<name>nectar</name>
+	<name>Nectar</name>
 	<creationDate>21/04/2014</creationDate>
 	<author>Daniel Micevski, Melvin Luong and Richard Rothwell</author>
 	<authorEmail>rrothwell@v3.org.au</authorEmail>

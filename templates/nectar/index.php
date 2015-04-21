@@ -80,7 +80,8 @@ $this->setTitle($config->getValue('config.sitename') . ' - ' . $this->getTitle()
         <div class="inner">
           <h1 class="brand">
             <a href="<?php echo $this->baseurl; ?>" title="<?php echo $config->getValue('config.sitename'); ?>">
-              <span><?php echo $config->getValue('config.sitename'); ?></span>
+			  <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logos/nectar-logo.jpg" height="72px"/>
+              <!-- span><?php echo $config->getValue('config.sitename'); ?></span -->
 			  <span style="color: gray; font-size: x-large; text-transform: uppercase;">Collaboration Hub</span>
             </a>
           </h1>
