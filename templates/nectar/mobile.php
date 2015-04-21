@@ -31,41 +31,42 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-//import need HUBzero libraries
-ximport('Hubzero_Document');
-ximport('Hubzero_Device');
 
-$config =& JFactory::getConfig();
+$config = JFactory::getConfig();
 
 //define tempate
-$this->template = 'nectar';
+$this->template = 'mytemplate';
 
 //get device info
-$hd = new Hubzero_Device();
+$browser = new \Hubzero\Browser\Detector();
 
 //get joomla version
 $joomlaVersion = new JVersion();
 $joomlaRelease = 'joomla' . $joomlaVersion->RELEASE;
 ?>
 <!DOCTYPE html>
-<html class="<?php echo strtolower($hd->getDeviceFamily() . ' ' . $hd->getDeviceOS() . ' ' . $hd->getDeviceOSVersion()); ?> <?php echo $joomlaRelease; ?>">
+<html class="<?php echo strtolower($browser->device() . ' ' . $browser->platform() . ' ' . $browser->platformVersion()); ?> <?php echo $joomlaRelease; ?>">
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> Doesn't validate... -->
 
-		<link rel="stylesheet" type="text/css" media="screen" href="<?php echo Hubzero_Document::getSystemStylesheet(array('fontcons', 'reset', 'columns', 'notifications', 'pagination', 'tabs', 'tags', 'tooltip', 'comments', 'voting', 'icons', 'buttons', 'layout')); /* reset MUST come before all others except fontcons */ ?>" />
+		<link rel="stylesheet" type="text/css" media="screen" href="<?php echo \Hubzero\Document\Assets::getSystemStylesheet(array('fontcons', 'reset', 'columns', 'notifications', 'pagination', 'tabs', 'tags', 'tooltip', 'comments', 'voting', 'icons', 'buttons', 'layout')); /* reset MUST come before all others except fontcons */ ?>" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/main.css" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/mobile.css" />
 
 		<jdoc:include type="head" />
 
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/mobile.js"></script>
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/html5.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<jdoc:include type="modules" name="notices" />
 		<jdoc:include type="modules" name="helppane" />
-		
+
 		<div id="top" class="mobile-top">
-			<div id="masthead" role="banner">
+			<header id="masthead" role="banner">
 				<div class="inner">
 					<h1>
 						<a href="<?php echo $this->baseurl; ?>" title="<?php echo $config->getValue('config.sitename'); ?>" style="height: 72px; padding: 0px">
@@ -83,46 +84,50 @@ $joomlaRelease = 'joomla' . $joomlaVersion->RELEASE;
 					<select name="menu" id="mobile-nav">
 					</select>
 				</div><!-- / .inner -->
-			</div><!-- / #masthead -->
+			</header><!-- / #masthead -->
 		</div><!-- / #top -->
-		
-		<div id="wrap" class="mobile-wrap">
-			<div id="content" class="<?php echo JRequest::getVar('option', ''); ?>" role="main">
-				<div class="inner">
-					<a name="content" id="content-anchor"></a>
-				<?php if ($this->countModules('left')) : ?>
-					<div class="main section withleft">
-						<div class="aside">
-							<jdoc:include type="modules" name="left" />
-						</div><!-- / #column-left -->
-						<div class="subject">
-				<?php endif; ?>
-				<?php if ($this->countModules('right')) : ?>
-					<div class="main section">
-						<div class="aside">
-							<jdoc:include type="modules" name="right" />
-						</div><!-- / .aside -->
-						<div class="subject">
-				<?php endif; ?>
-							<!-- start component output -->
-							<jdoc:include type="component" />
-							<!-- end component output -->
-				<?php if ($this->countModules('left or right')) : ?>
-						</div><!-- / .subject -->
-						<div class="clear"></div>
-					</div><!-- / .main section -->
-				<?php endif; ?>
-				</div><!-- / .inner -->
-			</div><!-- / #content -->
 
-			<div id="footer" class="mobile-footer">
+		<div id="wrap" class="mobile-wrap">
+			<main id="content" class="<?php echo JRequest::getVar('option', ''); ?>" role="main">
+				<div class="inner">
+					<?php if ($this->countModules('left or right')) : ?>
+						<section class="main section">
+					<?php endif; ?>
+
+					<?php if ($this->countModules('left')) : ?>
+							<aside class="aside">
+								<jdoc:include type="modules" name="left" />
+							</aside><!-- / .aside -->
+					<?php endif; ?>
+					<?php if ($this->countModules('left or right')) : ?>
+							<div class="subject">
+					<?php endif; ?>
+
+								<!-- start component output -->
+								<jdoc:include type="component" />
+								<!-- end component output -->
+
+					<?php if ($this->countModules('left or right')) : ?>
+							</div><!-- / .subject -->
+					<?php endif; ?>
+					<?php if ($this->countModules('right')) : ?>
+							<aside class="aside">
+								<jdoc:include type="modules" name="right" />
+							</aside><!-- / .aside -->
+					<?php endif; ?>
+
+					<?php if ($this->countModules('left or right')) : ?>
+						</section><!-- / .main section -->
+					<?php endif; ?>
+				</div><!-- / .inner -->
+			</main><!-- / #content -->
+
+			<footer id="footer" class="mobile-footer">
 				<a name="footer" id="footer-anchor"></a>
-				<a href="?tmpl=fullsite">View Full Site</a>
-			</div><!-- / #footer -->
+				<a href="<?php echo $_SERVER['SCRIPT_URI']; ?>?tmpl=fullsite">View Full Site</a>
+			</footer><!-- / #footer -->
 		</div><!-- / #wrap -->
 
 		<jdoc:include type="modules" name="endpage" />
-		
 	</body>
 </html>
-	
