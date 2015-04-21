@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<install type="template" version="2.5">
+<!--
+ Copyright 2005-2009 by Purdue Research Foundation, West Lafayette, IN 47906.
+ All rights reserved.
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License,
+ Version 2 as published by the Free Software Foundation.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+-->
+
+<install type="template" version="1.5">
 	<name>nectar</name>
-	<author>Daniel Micevski</author>
-	<copyright>Copyright 2015 V3 Alliance</copyright>
-	<description>nectar</description>
+	<creationDate>21/04/2014</creationDate>
+	<author>Daniel Micevski, Melvin Luong and Richard Rothwell</author>
+	<authorEmail>rrothwell@v3.org.au</authorEmail>
+	<authorUrl>http://www.v3.org.au/</authorUrl>
+	<version>0.1.0</version>
+	<copyright>Copyright 2005-2013 by Purdue Research Foundation, West Lafayette, IN 47906</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2</license>
+	<description>NeCTAR Collaboration Laboratory branding.</description>
+
 	<files>
 		<folder>css</folder>
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
 		<folder>language</folder>
-		<folder>less</folder>
+		<folder>less</folder>		
+		<filename>index.php</filename>
+		<filename>index.html</filename>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
-		<filename>group.php</filename>
-		<filename>index.php</filename>
 		<filename>mobile.php</filename>
-		<filename>offline.php</filename>
+		<filename>offline.php</filename>		
 		<filename>template_thumbnail.png</filename>
 	</files>
 	<languages>
