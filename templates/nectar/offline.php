@@ -37,7 +37,8 @@ $this->setTitle($config->getValue('config.sitename') . ' - ' . JText::_('Down fo
 		<jdoc:include type="head" />
 
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/offline.css" />
-	</head>
+		<!-- TODO: Do we need a mobile version of these of nectar.css -->
+		</head>
 	<body>
 
 		<div id="container">

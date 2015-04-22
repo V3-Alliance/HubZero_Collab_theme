@@ -8,19 +8,19 @@
  */
 	
 /* Featured items */
-	
-	#features h3 {
-		background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
-	}
+
+#features h3 {
+	background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
+}
 
 /* Resources section */
 
-	.resources-section {
-		background: #ececec url("/templates/nectar/images/layout/noise-lite.png");
-	}
-	
+.resources-section {
+	background: #ececec url("/templates/nectar/images/layout/noise-lite.png");
+}
+
 /* Events section */
-	.events-section {
-		background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
-	}
+.events-section {
+	background: #f9f9f9 url("/templates/nectar/images/layout/noise-lite.png");
+}
 	

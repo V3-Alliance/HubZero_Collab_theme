@@ -60,7 +60,8 @@ $joomlaRelease = 'joomla' . $joomlaVersion->RELEASE;
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/html5.js"></script>
 		<![endif]-->
-	</head>
+		<!-- TODO: We need a mobile version of nectar.css! -->
+		</head>
 	<body>
 		<jdoc:include type="modules" name="notices" />
 		<jdoc:include type="modules" name="helppane" />
