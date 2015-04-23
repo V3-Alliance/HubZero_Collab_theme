@@ -44,9 +44,11 @@
 		<filename>offline.php</filename>		
 		<filename>template_thumbnail.png</filename>
 	</files>
-	<languages>
-		<language tag="en-GB">language/en-GB.tpl_nectar.ini</language>
+	<!-- as per https://docs.joomla.org/Understanding_Joomla!_templates -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB.tpl_nectar.ini</language>
 	</languages>
+	<!-- as there is no admin folder this won't work in admin mode -->
 	<administration>
 		<languages folder="admin">
 			<language tag="en-GB">language/en-GB.tpl_nectar.ini</language>
